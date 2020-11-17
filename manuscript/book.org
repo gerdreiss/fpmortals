@@ -107,7 +107,7 @@ this book, you will need to use a recent version of Scala with
 FP-specific features enabled (e.g. in =build.sbt=):
 
 #+BEGIN_SRC scala
-scalaVersion in ThisBuild := "2.12.6"
+scalaVersion in ThisBuild := "2.12.12"
 scalacOptions in ThisBuild ++= Seq(
   "-language:_",
   "-Ypartial-unification",

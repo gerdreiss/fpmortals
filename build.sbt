@@ -1,7 +1,4 @@
-// this file exists only so I can have quick access to a REPL
-// with the correct dependencies.
-
-scalaVersion in ThisBuild := "2.12.6"
+scalaVersion in ThisBuild := "2.12.12"
 scalacOptions in ThisBuild ++= Seq(
   "-language:_",
   //"-Xsource:2.13",
@@ -25,7 +22,7 @@ libraryDependencies ++= Seq(
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.7")
 addCompilerPlugin(
-  "org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full
+  "org.scalamacros"                 % "paradise"       % "2.1.1" cross CrossVersion.full
 )
 
 addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.2.4")
